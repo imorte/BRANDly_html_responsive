@@ -1,0 +1,192 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.footer-wrap
+		text-align: center
+	.subscribe
+		.sub-button
+			margin: 20px 0
+			width: 760px
+	.header-wrap .owl-controls
+		bottom: -180px
+	.trending
+		height: 1440px
+		.clt-wrp
+			.desc
+				.text
+					overflow: visible
+					height: 136px
+			.owl-controls
+				bottom: -40px
+	.header-wrap
+		font-size: 24px
+		.main-title
+			font-size: 52px
+			white-space: normal
+	.header-wrap .shop-button
+		font-size: 16px
+		width: 180px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.footer-wrap
+		text-align: center
+	.from-the-blog
+		.last-slider
+			.last-text
+				height: 260px
+	.subscribe
+		input
+			margin-bottom: 20px
+		.sub-button
+			width: 760px
+			margin: 0 auto
+	.top-menu
+		position: absolute
+		right: 0
+		z-index: 10
+	.top-menu ul
+		display: none
+		font-size: 12px
+		max-width: 320px
+		top: 0
+		right: 0
+		background-color: #222533
+		text-align: center
+		margin-top: 50px
+		li
+			display: block
+			padding: 0 30px
+			transition: all .5s ease
+			&:hover
+				background-color: #30364e
+		a
+			padding: 0
+			font-size: 14px
+	.top-line span
+		font-size: 22px
+	.top-line a .br
+		font-size: 30px
+
+	.header-wrap
+		margin-top: 165px
+		.shop-button
+			left: 38%
+
+	.trending
+		height: 1420px
+		background-image: url(../img/trending-bg.jpg)
+		background-position: center
+
+@media only screen and (max-width : 940px)
+	.subscribe
+		.sub-text
+			font-size: 16px
+		input
+			width: 600px
+		.sub-button
+			width: 600px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.subscribe
+		input
+			margin-bottom: 20px
+		.sub-button
+			margin: 0 auto
+	.top-menu .button
+		margin: -6px 12px
+	.header-wrap
+		font-size: 19px
+		.main-title
+			font-size: 44px
+		.shop-button
+			left: 36%
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+@media only screen and (max-width: 628px)
+	.from-the-blog
+		.last-slider
+			.last-text
+				height: 310px
+	.subscribe
+		.sub-text
+			padding-top: 30px
+			font-size: 16px
+			width: 400px
+			margin: 0 auto
+		input
+			width: 400px
+		.sub-button
+			width: 400px
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 590px)
+	.from-the-blog
+		.last-slider
+			.item-title
+				font-size: 20px
+			.item-desc
+				font-size: 14px
+			.last-text
+				font-size: 16px
+
+@media only screen and (max-width : 480px)
+	.header-wrap
+		.shop-button
+			left: 31%
+	.top-menu
+		ul a
+			font-size: 12px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+ /**/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	.top-menu ul
+		display: block !important
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

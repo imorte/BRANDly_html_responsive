@@ -1,0 +1,170 @@
+@import "bourbon"
+@import "vars.sass"
+
+$header_color: #222533
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+
+.trans
+	transition: all .5s ease
+
+.ulli
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+		display: inline-block
+.main-head
+	background-image: url(../img/header_img.jpg)
+	background-size: cover
+	min-height: 930px
+	background-position: center
+	position: relative
+	&::before
+		@extend .before
+		background-color: $header_color
+		opacity: .4
+
+.top-line
+	min-height: 35px
+	.brand
+		color: #cd2a2d
+	a .br
+		font-size: 47px
+		text-transform: uppercase
+		font-family: 'Bebas Neue'
+	a:hover
+		text-decoration: none
+	span
+			font-family: "BebasNeueBook"
+			font-size: 35px
+			text-transform: uppercase
+.top-menu
+	font-size: 17px
+	font-family: 'Open Sans', sans-serif
+	text-align: right
+	.button
+		text-align: center
+		float: right
+		display: inline-block
+		line-height: 53px
+		position: absolute
+		top: 0
+		right: 0
+	a
+		color: #fff
+	li
+		line-height: 68px
+		padding: 0 32px
+	ul
+		@extend .ulli
+
+.toggle-mnu
+    width: 28px
+    height: 40px
+    padding-top: 25px
+.toggle-mnu span:after,
+.toggle-mnu span:before
+  content: ""
+  position: absolute
+  left: 0
+  top: -9px
+
+.toggle-mnu span:after
+  top: 9px
+
+.toggle-mnu span
+  position: relative
+  display: block
+
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before
+  width: 100%
+  height: 2px
+  background-color: #fff
+  transition: all 0.3s
+  backface-visibility: hidden
+
+.toggle-mnu.on span
+  background-color: transparent
+
+.toggle-mnu.on span:before
+  transform: rotate(45deg) translate(5px, 5px)
+.toggle-mnu.on span:after
+  transform: rotate(-45deg) translate(7px, -8px)
+.toggle-mnu.on + #menu
+  opacity: 1
+  visibility: visible
+.header-wrap
+	margin-top: 230px
+	text-align: center
+	font-size: 30px
+	color: #fff
+	.first-title
+		font-family: 'Open Sans Light', sans-serif
+		text-transform: uppercase
+		letter-spacing: 10px
+		color: #fff
+	.main-title
+		margin-top: 12px
+		font-size: 56px
+		white-space: nowrap
+		font-family: "Lato"
+		font-weight: 900
+	.second-title
+		margin-top: 18px
+		font-family: 'Open Sans Light', sans-serif
+	.shop-button
+		display: block
+		font-size: 18px
+		margin-top: 50px
+		text-transform: uppercase
+		color: #fff
+		border: 3px solid #fff
+		border-radius: 5px
+		width: 195px
+		text-align: center
+		padding: 15px 0
+		margin: 40px auto
+		transition: all 0.5s ease
+		&:hover
+			text-decoration: none
+			background-color: #222533
+
+.header-wrap
+	.owl-controls
+		position: absolute
+		width: 100%
+		bottom: -225px
+		text-align: center
+		.owl-dot
+			width: 12px
+			height: 12px
+			background: #fff
+			display: inline-block
+			margin: 0 5px
+			border-radius: 50%
+			&.active
+				height: 13px
+				width: 13px
+				background-color: transparent
+				border: 2px solid #fff

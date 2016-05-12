@@ -1,0 +1,277 @@
+@import "bourbon"
+@import "vars.sass"
+@import "../app/js/libs/owl/assets/owl.carousel.sass"
+
+input:focus::-webkit-input-placeholder
+    opacity: 0
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+	text-transform: uppercase
+	padding-left: 75px
+	font-family: "Open Sans", sans-serif
+	font-weight: 300
+	font-size: 13px
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+	text-transform: uppercase
+	padding-left: 75px
+	font-family: "Open Sans", sans-serif
+	font-weight: 300
+	font-size: 13px
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+	text-transform: uppercase
+	padding-left: 75px
+	font-family: "Open Sans", sans-serif
+	font-weight: 300
+	font-size: 13px
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+	text-transform: uppercase
+	padding-left: 75px
+	font-family: "Open Sans", sans-serif
+	font-weight: 300
+	font-size: 13px
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+.arrows
+  display: block
+  position: absolute
+  z-index: 10
+  cursor: pointer
+.button-active
+  background-color: #333
+  color: #fff
+.action-button
+	display: inline-block
+	width: 165px
+	height: 50px
+	border: 1px solid black
+	transition: all .3s ease
+	margin-right: 18px
+	&:hover
+		color: #fff
+		background-color: #333
+	strong
+		display: block
+		text-align: center
+		margin: 11px auto
+.item-title
+	color: #dc0000
+	font-family: "LatoBold"
+	font-size: 30px
+.title
+	text-align: center
+	font-size: 40px
+	font-family: "OpenSans"
+	margin: 55px 0
+	position: relative
+	display: block
+	&::before
+		content: ""
+		width: 113px
+		height: 3px
+		background-image: url(../img/tr-line.jpg)
+		display: block
+		margin: 0 auto
+		margin-bottom: 15px
+	&::after
+		content: ""
+		width: 113px
+		height: 3px
+		background-image: url(../img/tr-line.jpg)
+		display: block
+		margin: 0 auto
+		margin-top: 15px
+
+.trending
+	height: 920px
+	background-image: url(../img/trending-bg.jpg)
+	background-position: center
+
+	.clt-wrp
+		.owl-controls
+			position: absolute
+			width: 100%
+			bottom: -85px
+			text-align: center
+			height: 25px
+			.owl-dot
+				width: 12px
+				height: 12px
+				background: #fff
+				display: inline-block
+				margin: 0 5px
+				border-radius: 50%
+				background-color: #878787
+				&.active
+					height: 13px
+					width: 13px
+					background-color: transparent
+					border: 2px solid #dc0000
+		img
+			height: 570px
+			width: 570px
+			float: left
+		.desc
+			margin: 18px 20px
+
+			p
+				color: $item-desc-color
+				font-family: "OpenSans"
+				font-size: 18px
+				margin-top: 4px
+
+				&::after
+					content: ""
+					width: 1px
+					height: 30px
+					display: block
+					background-image: url(../img/desc-line.jpg)
+					transform-origin: 100% 0
+					transform: rotate(90deg)
+					margin: 18px 30px
+			.text
+				margin-top: -26px
+				font-family: 'Lato', sans-serif
+				font-size: 18px
+				color: $item-desc-color
+				letter-spacing: 1px
+				margin-bottom: 25px
+				height: 120px
+				overflow: hidden
+			.some-tip
+					font-family: 'Lato', sans-serif
+					font-size: 18px
+					color: $item-desc-color
+					letter-spacing: 1px
+					white-space: nowrap
+			.buttons-wrap
+				font-family: 'Open Sans', sans-serif
+				font-size: 16px
+				font-weight: 700
+				text-transform: uppercase
+				margin: 90px 0 30px
+				.button
+					//margin: 18px 25px
+					width: 65px
+					height: 48px
+					border: 1px solid black
+					margin-right: 26px
+					display: inline-block
+					transition: all .3s ease
+					cursor: pointer
+					&:hover
+						color: #fff
+						background-color: #333
+					strong
+						display: block
+						text-align: center
+						margin: 10px auto
+			.action-buttons
+				font-family: "Open Sans", sans-serif
+				font-size: 16px
+				font-weight: 700
+				text-transform: uppercase
+				cursor: pointer
+
+.from-the-blog
+	height: 1039px
+	background-color: #fff
+	.last-slider
+		margin-bottom: 35px
+  .owl-nav
+    .owl-prev
+      @extend .arrows
+      top: 20%
+      left: -10%
+    .owl-next
+      @extend .arrows
+      top: 20%
+      left: 107%
+		.item-title
+			display: block
+			margin: 15px 0 10px
+		.item-desc
+			font-size: 16px
+			font-family: 'Lato', sans-serif
+			color: #6e6e6e
+		.last-text
+			margin-top: 30px
+			border-top: 1px solid #ecf0f1
+			border-bottom: 1px solid #ecf0f1
+			font-size: 18px
+			padding: 30px 0 30px
+			font-family: "Open Sans"
+			font-weight: 300
+			color: #9a9a9a
+		.action-button
+			text-transform: uppercase
+			margin-top: 30px
+			cursor: pointer
+.subscribe
+	min-height: 250px
+	background-image: url(../img/footer-bg.png)
+	display: block
+	position: relative
+	&::before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		background-color: #5a5c66
+		opacity: .6
+	.sub-text
+		color: #fff
+		padding-top: 70px
+		text-transform: uppercase
+		font-size: 18px
+		font-family: "Open Sans"
+		font-weight: 300
+		letter-spacing: 1px
+	input
+		margin-top: 27px
+		display: inline-block
+		height: 50px
+		width: 760px
+		background-color: transparent
+		border: 1px solid #fff
+		color: #fff
+		background-image: url(../img/email-icon.png)
+		background-repeat: no-repeat
+		background-position: 3% center
+		&:focus
+			background-image: none
+	.sub-button
+		display: inline-block
+		color: #fff
+		margin-left: 108px
+		font-size: 18px
+		font-family: "Open Sans"
+		font-weight: 700
+		text-transform: uppercase
+		width: 268px
+		height: 48px
+		background-color: #fff
+		color: #000
+		transition: all .5s ease
+    cursor: pointer
+		&:hover
+			color: #fff
+			background-color: #333
+		p
+			text-align: center
+			line-height: 13px
+
+@import "media"
